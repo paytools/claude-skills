@@ -3,8 +3,8 @@ Useful skills, tools, and workflows for payroll Professionals.
 
 ## Using our skills
 
-### [Payroll Process Design](https://github.com/paytools/claude-skills/tree/master/payroll-process-design)
-Design, reformat, or improve a payroll process document. Use this skill whenever someone uploads or pastes a payroll checklist, pay run procedure, or process document and wants it improved, restructured, or formalised. Also triggers when someone wants to build a new payroll process from scratch.
+### [Payroll Process Cleanup](https://github.com/paytools/claude-skills/tree/master/payroll-process-design)
+Reformat or improve a payroll process document. Use this skill whenever someone uploads or pastes a payroll checklist, pay run procedure, or process document and wants it improved, restructured, or formalised.
 
 ### [Paytolls Activity Report (Paytools Customers only)](https://github.com/paytools/claude-skills/tree/master/paytools-activity-report)
 Generate a polished, self-contained HTML team activity report from a Paytools audit log JSON file. Use this skill whenever the user uploads or pastes a Paytools audit log (a JSON file containing an "audits" array) and asks for a report, summary, or analysis of team activity
