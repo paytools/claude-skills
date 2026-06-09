@@ -24,6 +24,8 @@ Use this as the source of truth when building a new checklist or improving an ex
 Every checklist opens with a short overview that explains why it exists and what it delivers.
 Keep this section tight — four lines is usually enough.
 
+Label the checklist with a title that reflects its objective.
+
 The overview should cover:
 
 - **Purpose** — a high-level summary of why the process is needed.
@@ -39,12 +41,17 @@ The overview should cover:
 > **Participants:** Payroll Officer, Payroll Manager, Finance.
 > **Outcome:** Pay run approved, ABA file submitted, STP lodged.
 
+
+Checklists are Read-do - operators carry out tasks as they check them off.
+
 ---
 
 ## 2. Writing checks
 
 Each checklist breaks the process into clear, action-driven tasks that are easy to follow
 and tick off. Think of each step as something someone can physically do or verify.
+
+Restrict the checklist to **5–9 items** to avoid overwhelming the user and encourage completion. Break larger projects into separate, phased checklists
 
 ### 2.1 Step content
 
@@ -79,9 +86,7 @@ Each check starts with a title. Titles should be:
 - Run the timesheet importer. (has a full stop)
 
 ### 2.3 Check Description
-use line breaks liberally to improve readability of the check description, Particularly where the description is describing inputs or parameters into a form or screen in the payroll system  
-
-
+Use line breaks liberally to improve readability of the check description, particularly where the description is describing inputs or parameters into a form or screen in the payroll system  
 
 ---
 
