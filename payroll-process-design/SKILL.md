@@ -1,16 +1,21 @@
 ---
-name: payroll-process-design
-description: 'Design, reformat, or improve a payroll process document. Use this skill whenever someone uploads or pastes a payroll checklist, pay run procedure, or process document and wants it improved, restructured, or formalised. Also triggers when someone wants to build a new payroll process from scratch. Trigger phrases include: "improve this checklist", "reformat this process", "clean up this pay run procedure", "turn this into a proper checklist", "help me write a payroll process", "build a process for [pay run type]", "our checklist is a mess", or any request to document or standardise how a pay run works. If a payroll document is attached and the user wants it better — use this skill.'
+name: payroll-process-cleanup
+description: 'Reformat or improve an existing payroll process document. Use this skill whenever someone uploads or pastes a payroll checklist, pay run procedure, or process document and wants it improved, restructured, or formalised. Trigger phrases include: "improve this checklist", "reformat this process", "clean up this pay run procedure", "turn this into a proper checklist", "our checklist is a mess", or any request to tidy up or standardise an existing pay run process. If a payroll document is attached and the user wants it better — use this skill.'
 ---
+---
+
+
 
 # Payroll Process Design
 
-A skill for designing, reformatting, and improving payroll process documents. It helps payroll
+A skill for reformatting and improving existing payroll process documents. It helps payroll
 professionals produce clear, consistent, action-driven checklists that their whole team can
-follow — whether they're starting from scratch or tidying up an existing document.
+follow — taking what they already have and making it production-ready.
+
+Payroll processes are usually cyclical - running every week, fortnight or month.
 
 The source of truth for all formatting and structural decisions is the design guide. Read it
-before making any changes or building any new content:
+before making any changes:
 
 > **Read first:** `references/payroll-process-design.md`
 
@@ -18,13 +23,11 @@ before making any changes or building any new content:
 
 ## How to approach this task
 
-There are two modes: **Improve an existing document** and **Build from scratch**. Determine
-which applies before doing anything else.
+This skill works on existing documents only. If the user doesn't have an existing document to
+improve, let them know this skill is for reformatting and improving existing processes, and
+suggest they draft a rough list of steps first — even a scrappy one — and come back.
 
-- If the user uploads or pastes a document → **Improve mode**
-- If there's no existing document → **Build from scratch mode**
-
-In both cases, run the interview before writing any output.
+Run the interview before writing any output.
 
 ---
 
@@ -37,21 +40,20 @@ has already told you and only ask what's missing.
 1. What payroll system do they use? (e.g. Ascender, Chris21, SAP, Micropay, ADP, Dayforce)
    — needed for screen names and navigation paths. If they don't know, note it and flag steps
    that need system-specific detail.
-2. What pay frequency is this process for? (weekly, fortnightly, monthly, or a mix)
-3. Is there an approval step, and who approves? (e.g. Payroll Manager, CFO)
+2. What pay frequency is this process for? (weekly, fortnightly, monthly). It might be a payroll process that gets run ad-hoc.
 
-**Document context** (only in Improve mode)
-5. What was wrong with the existing document, in their words? Is it incomplete, inconsistently
+**Document context**
+3. What was wrong with the existing document, in their words? Is it incomplete, inconsistently
    written, too vague, or just badly formatted?
-6. Are there any steps they know are missing that should be added?
-7. Are there any house naming conventions or local quirks to preserve? (e.g. they call something
-   by a non-standard name)
+4. Timings - what time of day/day of the pay cycle do actions occur on
+5. Are there any steps they know are missing that should be added?
+6. Are there any house naming conventions or local quirks to preserve? (e.g. they call something by a non-standard name)
 
 Keep it conversational. If the document is short and simple, you may not need all of these.
 
 ---
 
-## Step 2: Audit (Improve mode only)
+## Step 2: Audit
 
 Before rewriting, do a quick audit of the existing document and share it with the user. Cover:
 
@@ -65,7 +67,7 @@ This gives the user a chance to correct your understanding before you rewrite ev
 
 ---
 
-## Step 3: Write or reformat the checklist
+## Step 3: Reformat the checklist
 
 Apply the standards in `references/payroll-process-design.md` throughout. Key things to get right:
 
@@ -96,7 +98,7 @@ Apply the standards in `references/payroll-process-design.md` throughout. Key th
 
 ## Step 4: Output
 
-Default output is a  the same format of the input file if one was provided.
+Default output is the same format of the input file if one was provided.
 
 If the user asks for Word, Excel or CSV, produce that instead.
 
@@ -108,25 +110,6 @@ Once confirmed, generate the file. Name it:
 `[Organisation or process name] - [Pay Frequency] Pay Run Checklist.docx`
 
 e.g. `Laminex - Fortnightly Pay Run Checklist.docx`
-
----
-
-## Building from scratch
-
-If there's no existing document, use the interview answers to draft a full checklist from
-the standard phases below. Flesh out each phase with the checks you'd expect for that pay
-frequency and system, then ask the user to review and add anything missing.
-
-Standard phases for a typical pay run checklist:
-1. Pre-run setup (period setup, system config, standing data checks)
-2. Timesheet / data collection (importing timesheets, exception handling)
-3. Pay run processing (running the calculation, exception reports)
-4. Reconciliation (variance checks, headcount, cost centre review)
-5. Approval (manager and payroll manager sign-off)
-6. Payment processing (ABA file, superannuation, payment confirmation)
-7. Post-run tasks (archiving, reporting, STP finalisation if applicable)
-
-Not every phase applies to every organisation — use your judgment based on the interview.
 
 ---
 
